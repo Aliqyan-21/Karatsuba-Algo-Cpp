@@ -2,6 +2,8 @@
 
 This is my implementation of the Karatsuba multiplication algorithm in C++. This implementation is my interpretation of the algorithm, according to me this is the easiest implementation out there, easier then what was on [gfg](https://www.geeksforgeeks.org/karatsuba-algorithm-for-fast-multiplication-using-divide-and-conquer-algorithm/) atleast.
 
+<img src="https://github.com/Aliqyan-21/Karatsuba-Algo-Cpp/assets/117648906/d5fa65fe-abe5-40d5-8655-d931352cfccf" alt="image">
+
 ## What is the Karatsuba Algorithm?
 
 The Karatsuba algorithm is a fast multiplication algorithm that was discovered by Anatolii Alexeevitch Karatsuba in 1960. It is a divide-and-conquer algorithm that reduces the multiplication of `two n-digit numbers to three multiplications of n/2-digit numbers`, along with some additions and shifts.
