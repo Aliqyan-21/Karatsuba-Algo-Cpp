@@ -1,4 +1,3 @@
-#include <cmath>
 #include <iostream>
 
 /* Notes
@@ -11,13 +10,20 @@ x = a*10^n/2 + b
 if a num = ab, n = number of digits
 */
 
+long long pow(long long a, long long b) {
+  long long res = 1;
+  for (int i = 0; i < b; i++) {
+    res *= a;
+  }
+  return res;
+}
+
 // recursive function
 long long karatsubaMult(int x, int y) {
   if (x < 10 || y < 10)
     return x * y;
   long long tmp = x;
   uint8_t n, n_x = 0, n_y = 0;
-  long long a, b, c, d;
 
   while (tmp) {
     n_x++;
@@ -28,15 +34,19 @@ long long karatsubaMult(int x, int y) {
     n_y++;
     tmp /= 10;
   }
+
   n = std::max(n_x, n_y);
   long long half = n / 2;
-  a = x / pow(10, half);
-  b = x % (long long)pow(10, half);
-  c = y / pow(10, half);
-  d = y % (long long)pow(10, half);
+
+  long long a = x / pow(10, half);
+  long long b = x % (long long)pow(10, half);
+  long long c = y / pow(10, half);
+  long long d = y % (long long)pow(10, half);
+
   long long ac = karatsubaMult(a, c);
   long long bd = karatsubaMult(b, d);
   long long ad_plus_bc = karatsubaMult(a + b, c + d) - ac - bd;
+
   return ac * pow(10, 2 * half) + (ad_plus_bc * pow(10, half)) + bd;
 }
 
@@ -50,5 +60,6 @@ int main() {
   std::cout << "Normal multiplication: " << a * b << std::endl;
   std::cout << "karatsuba's multiplication: " << karatsubaMult(a, b)
             << std::endl;
+
   return 0;
 }
