@@ -2,7 +2,7 @@
 
 This is my implementation of the Karatsuba multiplication algorithm in C++. This implementation is my interpretation of the algorithm, according to me this is the easiest implementation out there, easier then what was on [gfg](https://www.geeksforgeeks.org/karatsuba-algorithm-for-fast-multiplication-using-divide-and-conquer-algorithm/) atleast.
 
-<img src="https://github.com/Aliqyan-21/Karatsuba-Algo-Cpp/assets/117648906/d5fa65fe-abe5-40d5-8655-d931352cfccf" alt="image" height=500px width=500px />
+<img src="https://github.com/Aliqyan-21/Karatsuba-Algo-Cpp/assets/117648906/d5fa65fe-abe5-40d5-8655-d931352cfccf" alt="image" height=300px width=250px />
 
 ## What is the Karatsuba Algorithm?
 
