@@ -1,4 +1,4 @@
-# Karatsuba Multiplication Algorithm
+# Karatsuba's Multiplication Algorithm
 
 This is my implementation of the Karatsuba multiplication algorithm in C++. This implementation is my interpretation of the algorithm, according to me this is the easiest implementation out there, easier then what was on [gfg](https://www.geeksforgeeks.org/karatsuba-algorithm-for-fast-multiplication-using-divide-and-conquer-algorithm/) atleast.
 
