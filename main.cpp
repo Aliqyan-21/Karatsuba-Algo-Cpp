@@ -36,7 +36,7 @@ long long karatsubaMult(int x, int y) {
   long long ac = karatsubaMult(a, c);
   long long bd = karatsubaMult(b, d);
   long long ad_plus_bc = karatsubaMult(a + b, c + d) - ac - bd;
-  return ac * (pow(10, 2 * half) + ad_plus_bc * pow(10, half)) + bd;
+  return ac * pow(10, 2 * half) + (ad_plus_bc * pow(10, half)) + bd;
 }
 
 int main() {
