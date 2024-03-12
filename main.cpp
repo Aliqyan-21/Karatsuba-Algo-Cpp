@@ -15,7 +15,8 @@ if a num = ab, n = number of digits
 long long karatsubaMult(int x, int y) {
   if (x < 10 || y < 10)
     return x * y;
-  long long tmp = x, n, n_x = 0, n_y = 0;
+  long long tmp = x;
+  uint8_t n, n_x = 0, n_y = 0;
   long long a, b, c, d;
 
   while (tmp) {
@@ -40,9 +41,14 @@ long long karatsubaMult(int x, int y) {
 }
 
 int main() {
-  long long a = 146123;
-  long long b = 352120;
-  std::cout << a * b << std::endl;
-  std::cout << karatsubaMult(a, b) << std::endl;
+  long long a, b;
+  std::cout << "Enter num1: ";
+  std::cin >> a;
+  std::cout << "Enter num2: ";
+  std::cin >> b;
+
+  std::cout << "Normal multiplication: " << a * b << std::endl;
+  std::cout << "karatsuba's multiplication: " << karatsubaMult(a, b)
+            << std::endl;
   return 0;
 }
