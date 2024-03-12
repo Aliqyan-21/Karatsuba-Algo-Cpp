@@ -39,9 +39,9 @@ long long karatsubaMult(int x, int y) {
   long long half = n / 2;
 
   long long a = x / pow(10, half);
-  long long b = x % (long long)pow(10, half);
+  long long b = x % pow(10, half);
   long long c = y / pow(10, half);
-  long long d = y % (long long)pow(10, half);
+  long long d = y % pow(10, half);
 
   long long ac = karatsubaMult(a, c);
   long long bd = karatsubaMult(b, d);
