@@ -21,8 +21,10 @@ The algorithm works as follows:
 - If either of the input numbers is less than 10, it performs a simple multiplication.
 - Otherwise, it splits the input numbers into two halves and recursively applies the algorithm.
 - It calculates the product of the two numbers using the formula:  
-  x _ y = (a _ c) _ 10^n + ((a + b) _ (c + d) - a _ c - b _ d) _ 10^(n/2) + b _ d  
+  x _ y = (a _ c) _ 10^n + ((a + b) _ (c + d) - a _ c - b _ d) _ 10^(n/2) + b _ d
+
   where:
+
   - a, b, c, d are the respective halves of the input numbers.
   - n is the number of digits in the input numbers.
 
